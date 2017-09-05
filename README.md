@@ -13,6 +13,7 @@ The following component is required to set up the app on any system.
 * Clone repository: ` git clone https://github.com/PrinceDavis/koa-api-starter.git`
 * Rename folder
 * Switch into project directory
+* Create .env file for keep credentails: `touch .env`
 * Install dependencies: `npm install`
 * Start web server: `vagrant up` (Optional)
 * Happ coding ):
