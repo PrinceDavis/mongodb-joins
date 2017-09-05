@@ -14,6 +14,7 @@ The following component is required to set up the app on any system.
 * Rename folder
 * Switch into project directory
 * Create .env file for keep credentails: `touch .env`
+* Should you another http framework please remove the koa boilerplate in server.js
 * Install dependencies: `npm install`
 * Start web server: `vagrant up` (Optional)
 * Happ coding ):
