@@ -1,0 +1,55 @@
+{
+  "name": "smartchallenge",
+  "version": "1.0.0",
+  "description": "Api server appication for smartchallenge player",
+  "main": "index.js",
+  "standard": {
+    "ignore": [
+      "**/*.spec.js"
+    ],
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  },
+  "engines": {
+    "node": "8.1.3"
+  },
+  "scripts": {
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha --require co-mocha **/*.spec.js",
+    "test-watch": "nodemon --exec \"npm test\"",
+    "dev": "standard --fix && nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Ossaija ThankGod <codebugsolved@gmail.com> (https://github.com/princedavis)",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "4.0.0",
+    "double-ended-queue": "2.1.0-0",
+    "joi": "10.6.0",
+    "koa": "2.3.0",
+    "koa-bodyparser": "4.2.0",
+    "koa-combine-routers": "0.1.1",
+    "koa-router": "7.2.1",
+    "koa2-cors": "2.0.3",
+    "mongodb": "2.2.31",
+    "mongoose": "4.11.6",
+    "redis": "2.8.0",
+    "winston": "2.3.1"
+  },
+  "devDependencies": {
+    "chai": "4.1.1",
+    "co-mocha": "1.2.0",
+    "mocha": "3.5.0",
+    "nodemon": "1.11.0",
+    "sinon": "3.2.0",
+    "sinon-chai": "2.12.0",
+    "standard": "10.0.3"
+  }
+}
