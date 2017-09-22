@@ -1,5 +1,10 @@
 'use strict'
 
-const api = require('./api')
+const Router = require('koa-router')
+const router = new Router({prefix: '/v1'})
 
-module.exports = api
+router.get('/', async ctx => {
+  ctx.body = 'welcome to smartchallenge player api'
+})
+
+module.exports = router
