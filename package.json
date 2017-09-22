@@ -26,10 +26,16 @@
   },
   "author": "Ossaija ThankGod <codebugsolved@gmail.com> (https://github.com/princedavis)",
   "license": "ISC",
-  "dependencies": {
-    
+ "dependencies": {
+    "dotenv": "4.0.0",
+    "joi": "11.0.3",
+    "koa": "2.3.0",
+    "koa-bodyparser": "4.2.0",
+    "koa-request-validation": "1.1.4",
+    "koa-router": "7.2.1",
+    "koa2-cors": "2.0.3"
   },
   "devDependencies": {
-    
+    "standard": "10.0.3"
   }
 }
