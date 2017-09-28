@@ -19,10 +19,10 @@
     ]
   },
   "scripts": {
-    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha --require co-mocha **/*.spec.js",
+    "test": "mocha**/*.spec.js",
     "test-watch": "nodemon --exec \"npm test\"",
-    "dev": "standard --fix && nodemon index.js",
-    "start": "node index.js"
+    "dev": "standard --fix && nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "author": "Ossaija ThankGod <codebugsolved@gmail.com> (https://github.com/princedavis)",
   "license": "ISC",
