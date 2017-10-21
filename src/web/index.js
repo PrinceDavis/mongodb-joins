@@ -1,9 +1,8 @@
 'use strict'
-
-require('./../db')
+const config = require('./../config')
+require('./../db').mongoDB(config)
 const http = require('http')
 const app = require('./server')
-const config = require('./../config')
 const server = http.createServer(app.callback())
 
 server.listen(config.port, () =>
