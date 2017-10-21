@@ -12,5 +12,5 @@ if (err) {
 }
 
 module.exports = {
-  PORT: value.PORT
+  port: value.PORT
 }

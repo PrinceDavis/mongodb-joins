@@ -21,21 +21,18 @@
   "scripts": {
     "test": "mocha**/*.spec.js",
     "test-watch": "nodemon --exec \"npm test\"",
-    "dev": "standard --fix && nodemon src/index.js",
+    "dev": "standard --fix && nodemon -L src/index.js",
     "start": "node src/index.js"
+  },
+  "engines": {
+    "node": "8.5.0"
   },
   "author": "Ossaija ThankGod <codebugsolved@gmail.com> (https://github.com/princedavis)",
   "license": "ISC",
  "dependencies": {
-    "dotenv": "4.0.0",
-    "joi": "11.0.3",
-    "koa": "2.3.0",
-    "koa-bodyparser": "4.2.0",
-    "koa-request-validation": "1.1.4",
-    "koa-router": "7.2.1",
-    "koa2-cors": "2.0.3"
+  
   },
   "devDependencies": {
-    "standard": "10.0.3"
+    
   }
 }

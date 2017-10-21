@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
 module.exports = config => {
-  mongoose.connect(config.MONGODB_URI, {
+  mongoose.connect(config.mongodb_uri, {
     useMongoClient: true
   })
   .then(db => {})

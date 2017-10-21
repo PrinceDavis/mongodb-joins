@@ -1,13 +1,11 @@
 version: '3'
 services:
-  web:
+  mongodb-relation:
     build: 
       context: .
       dockerfile: docker/dev/Dockerfile
     ports:
       - '3000:3000'
-    networks: 
-      - smart-network
     volumes:
-      - .:/home/app/smartadmin
-      - /home/app/smartadmin/node_modules
+      - ./:/home/app/code/
+      - /home/app/code/node_modules

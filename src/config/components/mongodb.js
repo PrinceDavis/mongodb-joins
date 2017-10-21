@@ -13,5 +13,5 @@ if (err) {
 }
 
 module.exports = {
-  MONGODB_URI: value.MONGODB_URI
+  mongodb_uri: value.MONGODB_URI
 }
