@@ -8,6 +8,5 @@ module.exports = UserModel => ({
   all: async ctx => {
     ctx.body = await UserModel.find({})
     .populate('friends')
-    .populate('posts')
   }
 })
